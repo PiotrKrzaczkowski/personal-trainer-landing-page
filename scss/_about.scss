@@ -1,0 +1,13 @@
+.about-me {
+  width: 100%;
+  padding: 20px;
+  .about-title {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    color: $second-color;
+  }
+  .about-text {
+    font-size: 1.15rem;
+    line-height: 2rem;
+  }
+}
