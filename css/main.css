@@ -242,23 +242,10 @@ label {
   background-color: white;
 }
 
-@media (min-width: 1024px) {
-  .navigation .mobile-navigation .mobile-fixed {
-    height: 80px;
-  }
-}
-
 .navigation .mobile-navigation .mobile-fixed .mobile-logo {
   display: block;
   height: 50px;
   z-index: 999;
-}
-
-@media (min-width: 1024px) {
-  .navigation .mobile-navigation .mobile-fixed .mobile-logo {
-    height: 80px;
-    margin-left: 10px;
-  }
 }
 
 .navigation .mobile-navigation .mobile-fixed .burger {
@@ -269,13 +256,6 @@ label {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 100;
-}
-
-@media (min-width: 1024px) {
-  .navigation .mobile-navigation .mobile-fixed .burger {
-    height: 80px;
-    margin-right: 20px;
-  }
 }
 
 .navigation .mobile-navigation .mobile-fixed .burger .burger-btn {
