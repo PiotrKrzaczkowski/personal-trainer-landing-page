@@ -19,7 +19,21 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="calculator"></div>
+      <div class="calculator">
+        <div class="calc-wrapper">
+          <div class="toggle-calc">X</div>
+          <h5 class="bmi-title">BMI Calculator</h5>
+          <label for="height"
+            >Height <input type="number" class="bmi-input" id="height"
+          /></label>
+          <label for="weight"
+            >Weight <input type="number" class="bmi-input" id="weight"
+          /></label>
+          <p id="result">result</p>
+          <button id="bmiBtn">Calculate</button>
+          <p class="bmi-info">Please enter height (cm) and weight (kg)</p>
+        </div>
+      </div>
       <nav class="navigation">
         <div class="mobile-navigation">
           <div class="mobile-fixed">
@@ -43,7 +57,7 @@
               <a href="#products" class="mobile-link">products</a>
             </li>
             <li class="mobile-li">
-              <a href="#" class="mobile-link">bmi calculator</a>
+              <a href="#" class="mobile-link bmi">bmi calculator</a>
             </li>
             <li class="mobile-li">
               <a href="#contact" class="mobile-link">contact</a>

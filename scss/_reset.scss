@@ -25,11 +25,15 @@ button {
 img {
   display: block;
 }
+label {
+  display: flex;
+  flex-direction: column;
+}
 .wrapper {
   width: 100%;
   margin: 0 auto;
   // max-width: $max-width;
   height: 100%;
   position: relative;
-  // z-index: -10;
+  z-index: 10;
 }
