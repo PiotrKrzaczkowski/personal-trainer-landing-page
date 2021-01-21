@@ -43,11 +43,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const headerBackground = document.querySelector(".header-content");
-let value = 0;
-window.addEventListener("scroll", () => {
-  headerBackground.style.backgroudColor = `rgba(0,0,0,0.${window.innerHeight})`;
-});
+// const headerBackground = document.querySelector(".header-content");
+// let value = 0;
+// window.addEventListener("scroll", () => {
+//   headerBackground.style.backgroudColor = `rgba(0,0,0,0.${window.innerHeight})`;
+// });
 
 // SMOOTH SCROLL
 const scroll = new SmoothScroll('a[href*="#"]', {
