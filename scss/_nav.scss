@@ -74,7 +74,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     transform: translateX(-1000px);
     line-height: 3rem;
     background-color: white;

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
@@ -13,6 +19,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="calculator"></div>
       <nav class="navigation">
         <div class="mobile-navigation">
           <div class="mobile-fixed">
@@ -27,25 +34,25 @@
           </div>
           <ul class="mobile-list">
             <li class="mobile-li">
-              <a href="#" class="mobile-link">main</a>
+              <a href="#header" class="mobile-link">main</a>
             </li>
             <li class="mobile-li">
-              <a href="#" class="mobile-link">about me</a>
+              <a href="#aboutme" class="mobile-link">about me</a>
             </li>
             <li class="mobile-li">
-              <a href="#" class="mobile-link">products</a>
+              <a href="#products" class="mobile-link">products</a>
             </li>
             <li class="mobile-li">
               <a href="#" class="mobile-link">bmi calculator</a>
             </li>
             <li class="mobile-li">
-              <a href="#" class="mobile-link">contact</a>
+              <a href="#contact" class="mobile-link">contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <main class="main">
-        <header class="header">
+        <header class="header" id="header">
           <div class="header-content">
             <div class="header-name-container">
               <h1 class="header-name">Mike Gaultier</h1>
@@ -54,7 +61,7 @@
             <a href="#" class="header-button">About me</a>
           </div>
         </header>
-        <section class="about-me">
+        <section class="about-me" id="aboutme">
           <h3 class="about-title">About me</h3>
           <p class="about-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -65,13 +72,31 @@
             delectus facilis eligendi quis totam nam eius quaerat.
           </p>
         </section>
-        <section class="products">
+        <section class="products" id="products">
           <p class="product-title">Workout plan</p>
           <div class="product-container">
             <div class="product-box">
-              <img src="#" alt="product" class="product-img" />
+              <img
+                src="./img/04012019-28.jpg"
+                alt="product"
+                class="product-img"
+              />
               <div class="product-text-container">
                 <p class="product-name">Personal training 1</p>
+                <p class="product-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Recusandae illum officiis eniti ullam!
+                </p>
+              </div>
+            </div>
+            <div class="product-box">
+              <img
+                src="./img/04012019-28.jpg"
+                alt="product"
+                class="product-img"
+              />
+              <div class="product-text-container">
+                <p class="product-name">Personal training 2</p>
                 <p class="product-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Recusandae illum officiis vero, totam deleniti ullam!
@@ -79,19 +104,13 @@
               </div>
             </div>
             <div class="product-box">
-              <img src="#" alt="product" class="product-img" />
+              <img
+                src="./img/04012019-28.jpg"
+                alt="product"
+                class="product-img"
+              />
               <div class="product-text-container">
-                <p class="product-name">Personal training 1</p>
-                <p class="product-description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Recusandae illum officiis vero, totam deleniti ullam!
-                </p>
-              </div>
-            </div>
-            <div class="product-box">
-              <img src="#" alt="product" class="product-img" />
-              <div class="product-text-container">
-                <p class="product-name">Personal training 1</p>
+                <p class="product-name">Personal training 3</p>
                 <p class="product-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Recusandae illum officiis vero, totam deleniti ullam!
@@ -100,10 +119,49 @@
             </div>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <p class="contact-title">Contact</p>
+          <form
+            action="mailto:fitness@wp.pl"
+            class="contact-form"
+            id="contact-form"
+          >
+            <input
+              type="text"
+              name="name"
+              class="form-input"
+              placeholder="Enter your name"
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="Enter your email"
+            />
+            <textarea
+              name="message"
+              rows="6"
+              class="form-input message"
+              placeholder="Enter your message here..."
+            ></textarea>
+            <input
+              type="submit"
+              class="form-input submit"
+              value="Seng message"
+            />
+          </form>
         </section>
       </main>
+      <footer>
+        <!-- <img src="./img/04012019-28.jpg" alt="fitness logo" /> -->
+        <h4 class="footer-title">Social media</h4>
+        <div class="footer-socials">
+          <a href="#" class="footer-link"> <i class="fab fa-facebook"></i></a>
+          <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-link"> <i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copy">Mike Gaultier</p>
+      </footer>
     </div>
     <script src="./index.js"></script>
   </body>

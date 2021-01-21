@@ -1,0 +1,70 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: $max-width;
+  padding: 20px;
+
+  .contact-title {
+    padding: 30px 0 20px 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $second-color;
+    // margin-top: 10px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-input {
+      border: none;
+      padding: 15px;
+      width: 100%;
+      margin: 10px;
+      border-bottom: 1px solid $font-color;
+    }
+    .form-input.submit {
+      width: 50%;
+      margin: 30px 0;
+      background-color: $second-color;
+      border: none;
+    }
+  }
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.33s;
+  transition-delay: 0.7s;
+  .footer-title {
+    padding: 20px;
+    align-self: flex-start;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: $second-color;
+  }
+  .copy {
+    font-size: 0.7rem;
+  }
+  .footer-socials {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 10px 0 20px;
+    .footer-link {
+      font-size: 2rem;
+      &:hover {
+        cursor: pointer;
+        color: $second-color;
+      }
+    }
+  }
+}
+footer.loaded {
+  opacity: 1;
+}

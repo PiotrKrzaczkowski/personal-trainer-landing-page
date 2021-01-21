@@ -1,12 +1,14 @@
 .about-me {
   width: 100%;
+  max-width: $max-width;
   padding: 20px;
   .about-title {
-    padding: 20px 0;
+    padding: 50px 0 0px 0;
     font-size: 1.5rem;
     color: $second-color;
   }
   .about-text {
+    margin-top: 20px;
     font-size: 1.15rem;
     line-height: 2rem;
   }
