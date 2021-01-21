@@ -68,10 +68,17 @@ calcButton.addEventListener("click", () => {
   const weight = document.getElementById("weight").value;
   let bmi = weight / (((height / 100) * height) / 100);
   let bmiOutput = bmi.toFixed(2);
-  document.getElementById("result").innerHTML = `Your BMI is ${bmiOutput}`;
-  setTimeout(() => {
-    document.getElementById("result").innerHTML = "result";
-  }, 5000);
+  if (height && weight) {
+    document.getElementById("result").innerHTML = `Your BMI is ${bmiOutput}`;
+    setTimeout(() => {
+      document.getElementById("result").innerHTML = "result";
+    }, 5000);
+  } else {
+    document.getElementById("result").innerHTML = "Enter both values";
+    setTimeout(() => {
+      document.getElementById("result").innerHTML = "result";
+    }, 5000);
+  }
 });
 
 document.querySelector(".mobile-link.bmi").addEventListener("click", () => {
