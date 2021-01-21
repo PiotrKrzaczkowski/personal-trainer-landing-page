@@ -450,6 +450,7 @@ label {
   width: 100%;
   height: 94vh;
   background: url(../img/photo-1-small.jpg);
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
