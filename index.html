@@ -58,24 +58,30 @@
               <h1 class="header-name">Mike Gaultier</h1>
               <h2 class="header-title">Personal trainer</h2>
             </div>
-            <a href="#" class="header-button">About me</a>
+            <a href="#aboutme" class="header-button">About me</a>
           </div>
         </header>
         <section class="about-me" id="aboutme">
           <h3 class="about-title">About me</h3>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            debitis corporis recusandae repudiandae dolor ex, cupiditate, dolore
-            vel dicta qui sequi doloribus ut. Quidem deleniti quisquam velit
-            veritatis earum perferendis dolorem ipsam cupiditate? Beatae,
-            accusantium consectetur harum odit itaque asperiores nobis quia
-            delectus facilis eligendi quis totam nam eius quaerat.
-          </p>
+          <div class="about-text-wrapper">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              debitis corporis recusandae repudiandae dolor ex, cupiditate,
+              dolore vel dicta qui sequi doloribus ut. Quidem deleniti quisquam
+              velit veritatis earum perferendis dolorem ipsam cupiditate?
+              Beatae, accusantium consectetur harum odit itaque asperiores nobis
+              quia delectus facilis eligendi quis totam nam eius quaerat. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Eum
+              consequuntur a delectus perspiciatis nihil et maiores animi.
+              Excepturi autem vitae recusandae aperiam dolorum, qui veniam!
+            </p>
+            <img src="./img/fitness_PNG158.png" alt="" class="about-img" />
+          </div>
         </section>
         <section class="products" id="products">
           <p class="product-title">Workout plan</p>
           <div class="product-container">
-            <div class="product-box">
+            <div class="product-box slide">
               <img
                 src="./img/04012019-28.jpg"
                 alt="product"
@@ -89,7 +95,7 @@
                 </p>
               </div>
             </div>
-            <div class="product-box">
+            <div class="product-box slide">
               <img
                 src="./img/04012019-28.jpg"
                 alt="product"
@@ -103,7 +109,7 @@
                 </p>
               </div>
             </div>
-            <div class="product-box">
+            <div class="product-box slide">
               <img
                 src="./img/04012019-28.jpg"
                 alt="product"
@@ -119,7 +125,7 @@
             </div>
           </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact slide" id="contact">
           <p class="contact-title">Contact</p>
           <form
             action="mailto:fitness@wp.pl"
@@ -153,16 +159,21 @@
         </section>
       </main>
       <footer>
-        <!-- <img src="./img/04012019-28.jpg" alt="fitness logo" /> -->
         <h4 class="footer-title">Social media</h4>
+        <img
+          src="./img/04012019-28.jpg"
+          alt="fitness logo"
+          class="footer-logo"
+        />
         <div class="footer-socials">
           <a href="#" class="footer-link"> <i class="fab fa-facebook"></i></a>
           <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
           <a href="#" class="footer-link"> <i class="fab fa-youtube"></i></a>
         </div>
-        <p class="copy">Mike Gaultier</p>
+        <p class="copy">Mike Gaultier - personal trainer</p>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

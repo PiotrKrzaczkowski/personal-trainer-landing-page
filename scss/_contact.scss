@@ -4,67 +4,104 @@
   flex-direction: column;
   max-width: $max-width;
   padding: 20px;
+  margin: 0 auto;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.3s;
 
   .contact-title {
     padding: 30px 0 20px 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
     color: $second-color;
-    // margin-top: 10px;
+    margin-top: 10px;
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+      padding: 40px 20px;
+    }
   }
   .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: 1024px) {
+      padding-left: 20px;
+    }
     .form-input {
       border: none;
       padding: 15px;
       width: 100%;
       margin: 10px;
       border-bottom: 1px solid $font-color;
+      @media (min-width: 768px) {
+        width: 60%;
+      }
     }
     .form-input.submit {
       width: 50%;
       margin: 30px 0;
       background-color: $second-color;
       border: none;
+      border-radius: 5px;
+      @media (min-width: 768px) {
+        width: 25%;
+      }
     }
   }
 }
+.contact.slide {
+  transform: translateY(0);
+  opacity: 1;
+}
 footer {
   width: 100%;
+  max-width: $max-width;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  margin: 0 auto;
   transition: 0.33s;
   transition-delay: 0.7s;
+  @media (min-width: 1024px) {
+    padding-left: 20px;
+  }
   .footer-title {
     padding: 20px;
     align-self: flex-start;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: $second-color;
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
   }
-  .copy {
-    font-size: 0.7rem;
-  }
+
   .footer-socials {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     margin: 10px 0 20px;
+    @media (min-width: 1024px) {
+      padding: 30px 0;
+    }
     .footer-link {
       font-size: 2rem;
+      transition: 0.3s;
       &:hover {
         cursor: pointer;
         color: $second-color;
       }
     }
   }
+  .copy {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+  }
 }
-footer.loaded {
-  opacity: 1;
+
+footer img {
+  width: 100px;
 }

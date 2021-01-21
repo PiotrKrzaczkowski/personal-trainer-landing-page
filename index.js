@@ -1,8 +1,3 @@
-window.addEventListener("load", () => {
-  document.querySelector("main").classList.add("loaded");
-  document.querySelector("footer").classList.add("loaded");
-});
-
 // MOBILE MENU TOGGLE
 
 const mobileMenuBtn = document.querySelector(".burger");
@@ -33,8 +28,32 @@ const toggleMobileMenu = () => {
 };
 mobileMenuBtn.addEventListener("click", toggleMobileMenu);
 
-// const header = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  const products = document.querySelectorAll(".product-box");
+  const contact = document.querySelector(".contact-form");
+  for (let i = 0; i < products.length; i++) {
+    let windowHeight = window.innerHeight;
+    let boxTop = products[i].getBoundingClientRect().top;
+    const boxPoint = 50;
+    if (boxTop < windowHeight - boxPoint) {
+      products[i].classList.add("slide");
+    } else {
+      products[i].classList.remove("slide");
+    }
+  }
+});
 
-// header.addEventListener('scroll',()=>{
-//   header.getBoundingClientRect.
-// })
+const headerBackground = document.querySelector(".header-content");
+let value = 0;
+window.addEventListener("scroll", () => {
+  headerBackground.style.backgroudColor = `rgba(0,0,0,0.${window.innerHeight})`;
+});
+
+// SMOOTH SCROLL
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 700,
+});
+
+window.onbeforeunload = () => {
+  window.scrollTo(0, 1400);
+};

@@ -1,0 +1,27 @@
+@keyframes loaded {
+  0% {
+    .main {
+      transform: translateY(150vh);
+    }
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes after {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+// .main.loaded {
+//   transform: translateY(0);
+//   z-index: -1;
+// }
+// .main.loaded::after {
+//   transform: translateY(-100%);
+// }
