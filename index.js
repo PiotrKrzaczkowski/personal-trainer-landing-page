@@ -28,6 +28,8 @@ const toggleMobileMenu = () => {
 };
 mobileMenuBtn.addEventListener("click", toggleMobileMenu);
 
+// SLIDE PRODUCT ITEMS
+
 window.addEventListener("scroll", () => {
   const products = document.querySelectorAll(".product-box");
   const contact = document.querySelector(".contact-form");
@@ -42,12 +44,6 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
-// const headerBackground = document.querySelector(".header-content");
-// let value = 0;
-// window.addEventListener("scroll", () => {
-//   headerBackground.style.backgroudColor = `rgba(0,0,0,0.${window.innerHeight})`;
-// });
 
 // SMOOTH SCROLL
 const scroll = new SmoothScroll('a[href*="#"]', {
@@ -81,6 +77,7 @@ calcButton.addEventListener("click", () => {
   }
 });
 
+// TOGGLE CALCULATOR BUTTON
 document.querySelector(".mobile-link.bmi").addEventListener("click", () => {
   document.querySelector(".calculator").classList.add("active");
 });
